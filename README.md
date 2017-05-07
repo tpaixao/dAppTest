@@ -12,7 +12,10 @@ npm install -g http-server
 ## Building:
 
 ```
-http-server //starts the server
-riot tags/ //builds all custom tags
+// starts the server
+http-server 
+// builds all custom tags 
+// and places them in alltags.js
+riot tags/ tags/alltags.js 
 ```
 
