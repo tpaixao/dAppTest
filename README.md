@@ -13,6 +13,6 @@ npm install -g http-server
 
 ```
 http-server //starts the server
-riot tags/ builds all custom tags
+riot tags/ //builds all custom tags
 ```
 
