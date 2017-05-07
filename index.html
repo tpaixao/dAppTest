@@ -1,0 +1,25 @@
+<html> <head> <title> RiotJS </title> </head>
+
+<body>
+<h1>testing</h1>
+
+<hello-form></hello-form>
+
+<script src="bower_components/riot/riot.min.js"></script> 
+<script src="tags/alltags.js"></script> 
+<!--<script src="tags/hello-world.js"></script> -->
+<!--<script src="tags/hello-form.js"></script> -->
+
+<script>
+riot.mount('hello-world',{ greet: "John" })
+riot.mount('hello-form')
+//data should be 
+this.items = [
+	{id: 1, name: "item 1", price: 13},
+	{id: 2, name: "item 2", price: 15}
+]
+</script>
+
+</body>
+
+</html>
