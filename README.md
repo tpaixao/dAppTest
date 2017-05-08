@@ -9,6 +9,12 @@ npm install -g bower
 npm install -g http-server
 ```
 
+Also, I am using bower:
+
+```
+bower install riot
+```
+
 ## Building:
 
 ```
