@@ -3,13 +3,11 @@
 <body>
 <h1>Stuff for sale</h1>
 
-<!--<hello-form></hello-form>-->
+<list-items list={items}>
+</list-items>
 
-<display-item name={item.name} price={item.price} each={item in items}>
-</display-item>
-
-<display-item name="test" price="2" >
-</display-item>
+<!--<display-item name="test" price="2" >-->
+<!--</display-item>-->
 
 <script src="bower_components/riot/riot.min.js"></script> 
 <script src="tags/alltags.js"></script> 
@@ -17,7 +15,6 @@
 <!--<script src="tags/hello-form.js"></script> -->
 
 <script>
-riot.mount('display-item')
 //riot.mount('hello-world',{ greet: "John" })
 //riot.mount('hello-form')
 //data should be 
@@ -25,6 +22,8 @@ this.items = [
 	{id: 1, name: "item 1", price: 13},
 	{id: 2, name: "item 2", price: 15}
 ]
+riot.mount('display-item')
+riot.mount('list-items')
 </script>
 
 </body>
