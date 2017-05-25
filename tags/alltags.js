@@ -9,6 +9,9 @@ this.addListing = function(e){
 }
 });
 
+riot.tag2('display-item', '<div class="item" style="margin: 0 auto; width:40px; text-align: center;"> {opts.name}<br> {opts.price}<br> <a href="">BUY</a> </div>', '', '', function(opts) {
+});
+
 riot.tag2('hello-form', '<form onsubmit="{setName}" ref="subform"> <input type="text" ref="greet"> <button type="submit" ref="button">Send name</button> </form> <h3>value is: {greeting} </h3>', '', '', function(opts) {
 	this.setName = function(e){
 		e.preventDefault()
@@ -19,4 +22,7 @@ riot.tag2('hello-form', '<form onsubmit="{setName}" ref="subform"> <input type="
 });
 
 riot.tag2('hello-world', '<h1>Hello {opts.greet}!!</h1>', '', '', function(opts) {
+});
+
+riot.tag2('list-items', '<display-item opts="#{item}" each="{item in opts.items}"> </display-item>', '', '', function(opts) {
 });

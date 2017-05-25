@@ -1,9 +1,15 @@
 <html> <head> <title> RiotJS </title> </head>
 
 <body>
-<h1>testing</h1>
+<h1>Stuff for sale</h1>
 
-<hello-form></hello-form>
+<!--<hello-form></hello-form>-->
+
+<display-item name="item 1" price="12" >
+</display-item>
+
+<display-item name="item 2" price="10" >
+</display-item>
 
 <script src="bower_components/riot/riot.min.js"></script> 
 <script src="tags/alltags.js"></script> 
@@ -12,7 +18,8 @@
 
 <script>
 riot.mount('hello-world',{ greet: "John" })
-riot.mount('hello-form')
+riot.mount('display-item')
+//riot.mount('hello-form')
 //data should be 
 this.items = [
 	{id: 1, name: "item 1", price: 13},
