@@ -5,10 +5,10 @@
 
 <!--<hello-form></hello-form>-->
 
-<display-item name="item 1" price="12" >
+<display-item name={item.name} price={item.price} each={item in items}>
 </display-item>
 
-<display-item name="item 2" price="10" >
+<display-item name="test" price="2" >
 </display-item>
 
 <script src="bower_components/riot/riot.min.js"></script> 
@@ -17,8 +17,8 @@
 <!--<script src="tags/hello-form.js"></script> -->
 
 <script>
-riot.mount('hello-world',{ greet: "John" })
 riot.mount('display-item')
+//riot.mount('hello-world',{ greet: "John" })
 //riot.mount('hello-form')
 //data should be 
 this.items = [
