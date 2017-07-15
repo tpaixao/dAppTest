@@ -18,7 +18,7 @@ bower install riot
 ## Building:
 
 ```
-// starts the server
+// starts a server
 http-server 
 // builds all custom tags 
 // and places them in alltags.js

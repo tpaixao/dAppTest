@@ -9,7 +9,13 @@ this.addListing = function(e){
 }
 });
 
-riot.tag2('display-item', '<div class="item" style="width:80px; text-align: center;"> {opts.name}<br> {opts.price}<br> <a if="{opts.name}" href="">BUY</a> </div>', '', '', function(opts) {
+riot.tag2('display-item', '<div class="item" style="width:80px; text-align: center;"> {opts.name}<br> {opts.idn}<br> {opts.price}<br> <form onsubmit="{buy}"> <button disabled="{opts.state != available}" type="submit">BUY</button> </form> </div>', '', '', function(opts) {
+this.buy = function(e){
+
+	e.preventDefault()
+	console.log("button clicked " )
+	this.update()
+}
 });
 
 riot.tag2('hello-form', '<form onsubmit="{setName}" ref="subform"> <input type="text" ref="greet"> <button type="submit" ref="button">Send name</button> </form> <h3>value is: {greeting} </h3>', '', '', function(opts) {
